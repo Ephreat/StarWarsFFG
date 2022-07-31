@@ -124,12 +124,14 @@ Hooks.once("init", async function () {
 
   switch (uitheme) {
     case "mandar": {
-      $('link[href="systems/starwarsffg/styles/starwarsffg.css"]').prop("disabled", true);
+      //$('link[href="systems/starwarsffg/styles/starwarsffg.css"]').prop("disabled", true); --> replace by  ==>
+      $('link[href*="styles/starwarsffg.css"]').prop("disabled", true);
       $("head").append('<link href="systems/starwarsffg/styles/mandar.css" rel="stylesheet" type="text/css" media="all">');
       break;
     }
     default: {
-      $('link[href="systems/starwarsffg/styles/starwarsffg.css"]').prop("disabled", false);
+      //$('link[href="systems/starwarsffg/styles/starwarsffg.css"]').prop("disabled", false); --> replace by  ==>    
+      $('link[href*="styles/starwarsffg.css"]').prop("disabled", false);
     }
   }
 
