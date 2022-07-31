@@ -1,6 +1,6 @@
 {
   "name": "starwarsffg",
-  "title": "Star Wars FFG",
+  "title": "Star Wars FFG (fix)",
   "description": "A system for playing Star Wars FFG games.",
   "version": "1.72",
   "minimumCoreVersion": "0.8.9",
